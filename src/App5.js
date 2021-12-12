@@ -1,7 +1,5 @@
 //DataSource Component
 
-// ResourceLoader Component
-
 import axios from "axios";
 import { DataSource } from "./ContainerComponents/DataSource";
 import { UserInfo } from "./ContainerComponents/UserInfo";
