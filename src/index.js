@@ -1,26 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App1 from './App1';
-import App2 from './App2';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App1 from "./App1";
+import App2 from "./App2";
 
-import reportWebVitals from './reportWebVitals';
-import App3 from './App3';
-import App4 from './App4';
-import App5 from './App5';
-import App6 from './App6';
+import reportWebVitals from "./reportWebVitals";
+import App3 from "./App3";
+import App4 from "./App4";
+import App5 from "./App5";
+import App6 from "./App6";
+import App7 from "./App7";
+import App8 from "./App8";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    
     {/* <App1 /> */}
     {/* <App2 /> */}
     {/* <App3 /> */}
     {/* <App4 /> */}
     {/* <App5 /> */}
-    <App6 />
+    {/* <App6 /> */}
+    {/* <App7 /> */}
+    <BrowserRouter>
+      <App8 />
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

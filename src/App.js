@@ -14,6 +14,8 @@ const RightHandComponent = ({message}) => (
   </div>
 );
 
+
+// Design Patterns are effective solutions to common application development challenges
 function App() {
   return (
     <SplitScreen leftWeight={1} rightWeight={3}>
