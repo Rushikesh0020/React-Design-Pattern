@@ -34,30 +34,16 @@ const AppScreen = ({ className }) => {
                   </DataSource>
                ) )
           }
-        <DataSource
-          getDataFunc={getServerData("/developers/211")}
-          resourceName="developer"
-        >
-          <DeveloperContainer>
-            <DeveloperInfo />
-          </DeveloperContainer>
-        </DataSource>
-        <DataSource
-          getDataFunc={getServerData("/developers/212")}
-          resourceName="developer"
-        >
-          <DeveloperContainer>
-            <DeveloperInfo />
-          </DeveloperContainer>
-        </DataSource>
-        <DataSource
-          getDataFunc={getServerData("/developers/213")}
-          resourceName="developer"
-        >
-          <DeveloperContainer>
-            <DeveloperInfo />
-          </DeveloperContainer>
-        </DataSource>
+            {
+              developerIds.map(devId => (
+                  <DataSource key={devId} getDataFunc={getServerData("/developers/"+devId)} resourceName="developer">
+                             <DeveloperContainer>
+                                 <DeveloperInfo />
+                             </DeveloperContainer>
+                  </DataSource>
+               ) )
+          }
+        
       </div>
     </div>
   );
